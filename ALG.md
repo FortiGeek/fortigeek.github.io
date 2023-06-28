@@ -1,5 +1,4 @@
-#### The SIP session helper
-##### [6.0.0 Hankbook](https://docs.fortinet.com/document/fortigate/6.0.0/handbook/997743/the-sip-session-helper)
+#### The SIP session helper [6.0.0 Handbook](https://docs.fortinet.com/document/fortigate/6.0.0/handbook/997743/the-sip-session-helper)
 - The SIP session-helper provides basic support for SIP calls passing through the FortiGate by opening SIP and RTP pinholes and by performing NAT of the addresses in SIP messages.
 - The SIP session helper:
   - Understands SIP dialog messages.
@@ -10,8 +9,7 @@
   - Provides basic SIP security as an access control device.
   - Uses the intrusion protection (IPS) engine to perform basic SIP protocol checks.
 
-#### The SIP ALG 
-##### [6.0.0 Handbook](https://docs.fortinet.com/document/fortigate/6.0.0/handbook/48607/the-sip-alg)
+#### The SIP ALG [6.0.0 Handbook](https://docs.fortinet.com/document/fortigate/6.0.0/handbook/48607/the-sip-alg)
 - The SIP ALG provides the same basic SIP support as the SIP session helper.
 - Additionally, the SIP ALG provides a wide range of features:
   - protect your network from SIP attacks
