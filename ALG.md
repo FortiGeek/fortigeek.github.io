@@ -1,10 +1,8 @@
 
-1. Dsiable ALG (enabled by default)
-2. kernel-helper-based: VoIP traffic is handled by the kernel SIP helper. If the SIP helper does not exist in system, no SIP processing occurs (https://docs.fortinet.com/document/fortigate/6.0.0/cli-reference/726496/system-settings)
-    - If an explicit VoIP profile is defined in the policy, VoIP traffic is redirected to proxy SIP ALG, regardless of the default-voip-alg-mode setting.
-3. check if disabled by listing sip-proxy stats (`diag sys sip-proxy stat`)
 
-### The SIP session helper[^1]
+1. When a firewall policy has a voip-profile applied, SIP-ALG is used over SIP session-helper, even if disabled[^1].
+
+### The SIP session helper[^2]
 - The SIP session-helper provides basic support for SIP calls passing through the FortiGate by opening SIP and RTP pinholes and by performing NAT of the addresses in SIP messages.
 - The SIP session helper:
   - Understands SIP dialog messages.
@@ -28,7 +26,7 @@ end
  - To use the SIP session helper you must not add a VoIP profile to the security policy. 
    - If you add a VoIP profile, SIP traffic bypasses the SIP session helper and is processed by the SIP ALG.
 
-### The SIP ALG[^2]
+### The SIP ALG[^3]
 - The FortiOS SIP Application Layer Gateway (ALG) allows SIP calls to pass through a FortiGate by opening SIP and RTP pinholes and performing source and destination IP address and port translation for SIP and RTP packets.
 - The SIP ALG provides the same basic SIP support as the SIP session helper.
 - Additionally, the SIP ALG provides a wide range of features:
@@ -51,5 +49,6 @@ By default, FortiGate is using SIP ALG to process SIP traffic.
 proxy-based = default. SIP ALG is used.
 kernel-helper-based = sessions are probably used (check the config systme settings set sip-helper enable for full session helper mode)
 ```
-[^1]: https://docs.fortinet.com/document/fortigate/6.0.0/handbook/997743/the-sip-session-helper
-[^2]: https://docs.fortinet.com/document/fortigate/6.0.0/handbook/48607/the-sip-alg
+[^1]: https://community.fortinet.com/t5/FortiGate/Technical-Tip-Disabling-VoIP-Inspection/ta-p/194131
+[^2]: https://docs.fortinet.com/document/fortigate/6.0.0/handbook/997743/the-sip-session-helper
+[^3]: https://docs.fortinet.com/document/fortigate/6.0.0/handbook/48607/the-sip-alg
