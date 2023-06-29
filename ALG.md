@@ -1,7 +1,7 @@
 1. Disable SIP session helper (disabled by default)
 2. Dsiable ALG (enabled by default)
 
-#### The SIP session helper[^SESSION-6]
+#### The SIP session helper[^1]
 - The SIP session-helper provides basic support for SIP calls passing through the FortiGate by opening SIP and RTP pinholes and by performing NAT of the addresses in SIP messages.
 - The SIP session helper:
   - Understands SIP dialog messages.
@@ -24,7 +24,8 @@ end
 ```
  - To use the SIP session helper you must not add a VoIP profile to the security policy. 
    - If you add a VoIP profile, SIP traffic bypasses the SIP session helper and is processed by the SIP ALG.
-#### The SIP ALG[^ALG-6]
+
+#### The SIP ALG[^2]
 - The FortiOS SIP Application Layer Gateway (ALG) allows SIP calls to pass through a FortiGate by opening SIP and RTP pinholes and performing source and destination IP address and port translation for SIP and RTP packets.
 - The SIP ALG provides the same basic SIP support as the SIP session helper.
 - Additionally, the SIP ALG provides a wide range of features:
@@ -34,15 +35,18 @@ end
   - provide detailed logging and reporting of SIP activity. 
 - By default all SIP traffic is processed by the SIP ALG.
   - If the policy that accepts the SIP traffic includes a VoIP profile, the SIP traffic is processed by that profile.
+
 ### [How to disable SIP ALG ](https://community.fortinet.com/t5/Support-Forum/how-to-disable-SIP-ALG/m-p/70822)
 As mentioned in the KB, it's the original/old/not-VDOM-based way to handle SIP sessions before they implemented ALG(proxy base). Both basically do the same, and in case you don't want a FW to tweak SIP sessions, you need to disable both.
+
 ### [How to confirm if FortiGate is using SIP Session Helper or SIP ALG](https://community.fortinet.com/t5/FortiGate/Technical-Tip-How-to-confirm-if-FortiGate-is-using-SIP-Session/ta-p/190757?externalID=FD38087)
 By default, FortiGate is using SIP ALG to process SIP traffic.
+
 ### To verify it checking configuration:
 `show full system setting | grep default-voip-alg-mode`
 ```
 proxy-based = default. SIP ALG is used.
 kernel-helper-based = sessions are probably used (check the config systme settings set sip-helper enable for full session helper mode)
 ```
-[^SESSION-6]: https://docs.fortinet.com/document/fortigate/6.0.0/handbook/997743/the-sip-session-helper
-[^ALG-6]: https://docs.fortinet.com/document/fortigate/6.0.0/handbook/48607/the-sip-alg
+[^1]: https://docs.fortinet.com/document/fortigate/6.0.0/handbook/997743/the-sip-session-helper
+[^2]: https://docs.fortinet.com/document/fortigate/6.0.0/handbook/48607/the-sip-alg
