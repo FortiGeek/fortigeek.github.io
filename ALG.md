@@ -1,5 +1,8 @@
-1. Disable SIP session helper (disabled by default)
-2. Dsiable ALG (enabled by default)
+
+1. Dsiable ALG (enabled by default)
+2. kernel-helper-based: VoIP traffic is handled by the kernel SIP helper. If the SIP helper does not exist in system, no SIP processing occurs (https://docs.fortinet.com/document/fortigate/6.0.0/cli-reference/726496/system-settings)
+    - If an explicit VoIP profile is defined in the policy, VoIP traffic is redirected to proxy SIP ALG, regardless of the default-voip-alg-mode setting.
+3. check if disabled by listing sip-proxy stats (`diag sys sip-proxy stat`)
 
 ### The SIP session helper[^1]
 - The SIP session-helper provides basic support for SIP calls passing through the FortiGate by opening SIP and RTP pinholes and by performing NAT of the addresses in SIP messages.
