@@ -1,5 +1,5 @@
 # FortiTutorials
-#### Disable SIP ALG
+### Disable SIP ALG
 Display the SIP session-helper entry #:
 ```
 config system session-helper
