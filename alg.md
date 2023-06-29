@@ -1,5 +1,5 @@
 ```
-firewall (vdom) # config system settings
-    set default-voip-alg-mode kernel-helper-based
+config system settings
+set default-voip-alg-mode kernel-helper-based
 end
 ```
