@@ -1,6 +1,6 @@
 # Disable SIP ALG
 
-<div style="background-color: rgb(150, 150, 150);">
+<div style="background-color: rgb(50, 50, 50);">
 
 ```
 config system settings
