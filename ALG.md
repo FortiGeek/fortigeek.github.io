@@ -24,7 +24,7 @@ end
 ```
  - To use the SIP session helper you must not add a VoIP profile to the security policy. 
    - If you add a VoIP profile, SIP traffic bypasses the SIP session helper and is processed by the SIP ALG.
-- 
+
 #### The SIP ALG[^2]
 - The FortiOS SIP Application Layer Gateway (ALG) allows SIP calls to pass through a FortiGate by opening SIP and RTP pinholes and performing source and destination IP address and port translation for SIP and RTP packets.
 - The SIP ALG provides the same basic SIP support as the SIP session helper.
