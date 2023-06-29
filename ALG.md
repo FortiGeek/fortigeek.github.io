@@ -31,21 +31,16 @@ end
   - provide detailed logging and reporting of SIP activity. 
 - By default all SIP traffic is processed by the SIP ALG.
   - If the policy that accepts the SIP traffic includes a VoIP profile, the SIP traffic is processed by that profile.
-### [how to disable SIP ALG ](https://community.fortinet.com/t5/Support-Forum/how-to-disable-SIP-ALG/m-p/70822)
+### [How to disable SIP ALG ](https://community.fortinet.com/t5/Support-Forum/how-to-disable-SIP-ALG/m-p/70822)
 As mentioned in the KB, it's the original/old/not-VDOM-based way to handle SIP sessions before they implemented ALG(proxy base). Both basically do the same, and in case you don't want a FW to tweak SIP sessions, you need to disable both.
-
-
 ### [How to confirm if FortiGate is using SIP Session Helper or SIP ALG](https://community.fortinet.com/t5/FortiGate/Technical-Tip-How-to-confirm-if-FortiGate-is-using-SIP-Session/ta-p/190757?externalID=FD38087)
 By default, FortiGate is using SIP ALG to process SIP traffic.
-#### To verify it checking configuration:
+### To verify it checking configuration:
 `show full system setting | grep default-voip-alg-mode`
 ```
 proxy-based = default. SIP ALG is used.
 kernel-helper-based = sessions are probably used (check the config systme settings set sip-helper enable for full session helper mode)
 ```
-
 1. Disable SIP session helper (disabled by default)
-
-
 [^SESSION-6]: https://docs.fortinet.com/document/fortigate/6.0.0/handbook/997743/the-sip-session-helper
 [^ALG-6]: https://docs.fortinet.com/document/fortigate/6.0.0/handbook/48607/the-sip-alg
