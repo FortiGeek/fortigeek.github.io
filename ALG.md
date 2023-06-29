@@ -1,4 +1,4 @@
-# Disable SIP ALG 1
+# Disable SIP ALG
 
 <div style="background-color: rgb(50, 50, 50);">
 ```
