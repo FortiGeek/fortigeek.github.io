@@ -1,6 +1,6 @@
 # FortiTutorials
 #### Disable SIP ALG
-Display the SIP session helper and remove it:
+Display the SIP session-helper entry #:
 ```
 config system session-helper
 show
@@ -19,7 +19,7 @@ delete 13
 end
 ```
 
-2. Disable SIP ALG
+Disable SIP ALG
 ```
 config system settings
 set default-voip-alg-mode kernel-helper-based
