@@ -1,5 +1,5 @@
 # FortiTutorials
-## Disable SIP ALG
+### Disable SIP ALG
 [Technical Tip: Disabling VoIP Inspection](https://community.fortinet.com/t5/FortiGate/Technical-Tip-Disabling-VoIP-Inspection/ta-p/194131)<br><br>
 Disabling SIP inspection can be done partially <disabling SIP-ALG (Layer7), keeping SIP-helper (Layer4) > or completely <disabling both>.
 - When a firewall policy has a voip-profile applied, SIP-ALG is used over SIP session-helper, even if disabled.
@@ -12,24 +12,3 @@ config system settings
 set default-voip-alg-mode kernel-helper-based
 end
 ``` 
-Display the SIP session-helper entry number we need to edit (13 in this example)<br>
-This is done from _global config_ mode if vDOMs are present:
-```
-(global) # config system session-helper
-(session-helper) # show | grep -fi sip
-```
-Look for entry number containing sip/udp 5060:
-```
-config system session-helper
-    edit 13
-        set name sip <---
-        set protocol 17
-        set port 5060
-    next
-end
-```
-Delete the entry number:
-```
-delete 13
-end
-```
