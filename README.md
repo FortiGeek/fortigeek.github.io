@@ -1,6 +1,6 @@
 # FortiTutorials
-### Console term length 0 / no pager
-### Disable SIP ALG
+### Console term length 0 / no pager {#term-length-0}
+### Disable SIP ALG {#disable-sip-alg}
 [Technical Tip: Disabling VoIP Inspection](https://community.fortinet.com/t5/FortiGate/Technical-Tip-Disabling-VoIP-Inspection/ta-p/194131)<br><br>
 Disabling SIP inspection can be done partially <disabling SIP-ALG (Layer7), keeping SIP-helper (Layer4) > or completely <disabling both>.
 - When a firewall policy has a voip-profile applied, SIP-ALG is used over SIP session-helper, even if disabled.
