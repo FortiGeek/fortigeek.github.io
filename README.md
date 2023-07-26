@@ -11,7 +11,7 @@ config system settings
 set default-voip-alg-mode kernel-helper-based
 end
 ``` 
-Display the SIP session-helper entry number we need to edit (13 in this example)
+Display the SIP session-helper entry number we need to edit (13 in this example)<br>
 This is done from _global config_ mode if vDOMs are present:
 ```
 (global) # config system session-helper
