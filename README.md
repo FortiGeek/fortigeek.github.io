@@ -14,3 +14,8 @@ set default-voip-alg-mode kernel-helper-based
 end
 ``` 
 ### Console term length 0 / no pager
+```
+config system console
+set output standard
+end
+```
