@@ -7,6 +7,22 @@ set output standard
 end
 ```
 
+### Bandwidth widget / max number of monitored interfaces reached
+```
+di de en
+di de traffic interface
+```
+Check total count # of interfaces listed (port1, port2, port3, LAN, DMZ, WAN, IPSEC_Tuns etc...)
+
+To remove any unnecessary interfaces: 
+```
+config sys interface
+edit <IPSEC_tun01>
+set monitor-bandwidth disable
+next
+end
+```
+
 ### Disable SIP ALG
 [Technical Tip: Disabling VoIP Inspection](https://community.fortinet.com/t5/FortiGate/Technical-Tip-Disabling-VoIP-Inspection/ta-p/194131)<br><br>
 Disabling SIP inspection can be done partially <disabling SIP-ALG (Layer7), keeping SIP-helper (Layer4) > or completely <disabling both>.
