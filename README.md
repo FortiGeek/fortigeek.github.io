@@ -12,7 +12,7 @@ ___
 di de en
 di de traffic interface
 ```
-Check total count # of interfaces listed (port1, port2, port3, LAN, DMZ, WAN, IPSEC_Tuns etc...)
+Check total count # of interfaces listed (port1, port2, port3, LAN, DMZ, WAN, IPSEC_Tuns etc...) **25** is max #
 
 To remove any unnecessary interfaces: 
 ```
