@@ -49,6 +49,19 @@ end
 ```
 fnsysctl ifconfig port1
 ```
+---
+```
+diagnose sys ha history read
+```
+Messages to note
+_link status changed:_ 0 = *down* / 1 = *up*
+_<serial #> is elected as the cluster primary of <#> member_
+> The history is limited to 512 entries and is persistent to reboots; each unit keeps track of its own history of events.  
+> It'll override the oldest events first when 512 entries are reached.
+```
+get system ha status
+```
+---
 ### LOGS // Link monitor status
 ```
 Log & Report -> Events -> System Events
@@ -62,9 +75,4 @@ Message:
 ```
 Virtual cluster's member state moved
 ```
-```
-diagnose sys ha history read
-```
-```
-get system ha status
-```
+---
