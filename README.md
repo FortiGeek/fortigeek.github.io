@@ -52,7 +52,15 @@ Log Description: Link monitor status
 ```
 ---
 ### LOGS // HA device election
-(2) work is primary while (3) secondary is secondary
+Log & Report -> Events -> HA Events
+
+Message:
+```
+Virtual cluster's member state moved
+```
 ```
 diagnose sys ha history read
+```
+```
+get system ha status
 ```
