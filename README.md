@@ -57,7 +57,7 @@ View HA history
 ```
 diagnose sys ha history read
 ```
- ![diag sys ha his](/assets/images/tux.png)
+![diag sys ha history read](https://github.com/FortiGeek/fortigeek.github.io/gh-DIAG-ha-01.png)
 **Messages to note**  
 _HA state change time_  
 _link status changed_ 0 = **down** / 1 = **up**  
