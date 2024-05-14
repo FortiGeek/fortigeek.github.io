@@ -55,7 +55,7 @@ View HA history
 diagnose sys ha history read
 ```
 **Messages to note**  
-_HA state change time_
+_HA state change time_  
 _link status changed_ 0 = **down** / 1 = **up**  
 _<serial #> is elected as the cluster primary of <#> member_
 > The history is limited to 512 entries and is persistent to reboots; each unit keeps track of its own history of events.  
