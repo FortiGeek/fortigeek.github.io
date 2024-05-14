@@ -50,6 +50,7 @@ end
 fnsysctl ifconfig port1
 ```
 ---
+### DIAG // HA
 View HA history
 > The history is limited to 512 entries and is persistent to reboots; each unit keeps track of its own history of events.  
 > It'll override the oldest events first when 512 entries are reached.
