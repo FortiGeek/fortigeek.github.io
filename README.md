@@ -1,5 +1,5 @@
 # FortiTutorials
-
+## Config:
 ### Console term length 0 / no pager
 ```
 config system console
@@ -42,4 +42,17 @@ if sip entry is still 13 perform the following (if not, change the entry # after
 ```
 delete 13
 end
+```
+---
+## TSHOOT:
+### LOGS // Link monitor status
+```
+Log & Report -> Events -> System Events
+Log Description: Link monitor status
+```
+---
+### LOGS // HA device election
+(2) work is primary while (3) secondary is secondary
+```
+diagnose sys ha history read
 ```
