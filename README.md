@@ -8,10 +8,10 @@ diagnose sys ha history read
 ```
 ![diag sys ha history read](https://github.com/FortiGeek/fortigeek.github.io/blob/main/gh-DIAG-ha-01.png)  
 **Messages to note**  
-_HA state change time_  
-_link status changed_ [0 = **down** / 1 = **up**]  
-_heartbeats from FG100ETK18..95 are lost on all hbdev_  
-_<serial #> is elected as the cluster primary of <#> member_
++ _HA state change time_  
++ _link status changed_ [0 = **down** / 1 = **up**]  
++ _heartbeats from FG100ETK18..95 are lost on all hbdev_  
++ _<serial #> is elected as the cluster primary of <#> member_
 ```
 get system ha status
 ```
