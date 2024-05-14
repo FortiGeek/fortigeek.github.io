@@ -1,5 +1,5 @@
 # FortiTutorials
-View HA history from CLI:  
+View HA history from CLI [^1]:  
 ```
 diagnose sys ha history read
 ```
@@ -84,3 +84,4 @@ Message:
 Virtual cluster's member state moved
 ```
 ---
+[^1]: https://community.fortinet.com/t5/FortiGate/Technical-Tip-Troubleshooting-unexpected-High-Availability-HA/ta-p/228854  
