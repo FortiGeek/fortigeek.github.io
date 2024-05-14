@@ -1,8 +1,5 @@
 # FortiTutorials
 View HA history from CLI:  
-> [!NOTE] 
-> The history is limited to 512 entries and is persistent to reboots; each unit keeps track of its own history of events.  
-> It'll override the oldest events first when 512 entries are reached.
 ```
 diagnose sys ha history read
 ```
@@ -12,6 +9,9 @@ diagnose sys ha history read
 + _link status changed_ [0 = **down** / 1 = **up**]  
 + _heartbeats from FG100ETK18..95 are lost on all hbdev_  
 + _<serial #> is elected as the cluster primary of <#> member_
+> [!NOTE] 
+> The history is limited to 512 entries and is persistent to reboots; each unit keeps track of its own history of events.  
+> It'll override the oldest events first when 512 entries are reached.
 ```
 get system ha status
 ```
