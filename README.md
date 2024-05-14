@@ -45,6 +45,10 @@ end
 ```
 ---
 ## TSHOOT:
+### DIAG // Interface counters
+```
+fnsysctl ifconfig port1
+```
 ### LOGS // Link monitor status
 ```
 Log & Report -> Events -> System Events
