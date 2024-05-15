@@ -51,7 +51,7 @@ fnsysctl ifconfig port1
 ```
 ---
 ### DIAG // HA
-View HA history from CLI [^1]:  
+View HA history [^1]:  
 ```
 diagnose sys ha history read
 ```
@@ -65,6 +65,8 @@ diagnose sys ha history read
 > [!NOTE] 
 > The history is limited to 512 entries and is persistent to reboots; each unit keeps track of its own history of events.  
 > It'll override the oldest events first when 512 entries are reached.
+
+View HA status info:
 ```
 get system ha status
 ```
