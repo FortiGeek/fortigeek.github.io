@@ -45,9 +45,14 @@ end
 ```
 ---
 ## TSHOOT:
-### DIAG // Interface counters
+### DIAG // Interface
+Show interface counters:
 ```
 fnsysctl ifconfig port1
+```
+Show interface info/stats:
+```
+diag hardware deviceinfo nic interface
 ```
 ---
 ### DIAG // HA
