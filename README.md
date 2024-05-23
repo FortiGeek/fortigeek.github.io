@@ -45,6 +45,12 @@ end
 ```
 ---
 ## TSHOOT:
+### DIAG // SSL-VPN
+Show users connected with SSL-VPN:
+```
+get vpn ssl monitor
+```
+---
 ### DIAG // Interface
 Show interface counters:
 ```
