@@ -83,8 +83,8 @@ get system ha status
 ```
 ---
 ### LOGS // Link monitor status
+Log & Report -> Events -> System Events:
 ```
-Log & Report -> Events -> System Events
 Log Description: Link monitor status
 ```
 ---
