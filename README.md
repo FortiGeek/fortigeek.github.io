@@ -82,16 +82,20 @@ View HA status info:
 get system ha status
 ```
 ---
-### LOGS // Link monitor status
-Log & Report -> Events -> System Events:
+### LOGS // SSL-VPN
+Log & Report -> Events -> VPN Events -> ACTION:
 ```
-Log Description: Link monitor status
+ssl-login-fail
+```
+---
+### LOGS // Link monitor status
+Log & Report -> Events -> System Events -> LOG DESCRIPTION:
+```
+Link monitor status
 ```
 ---
 ### LOGS // HA device election
-Log & Report -> Events -> HA Events
-
-Message:
+Log & Report -> Events -> HA Events -> MESSAGE:
 ```
 Virtual cluster's member state moved
 ```
