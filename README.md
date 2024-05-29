@@ -7,6 +7,13 @@ set output standard
 end
 ```
 ___
+### match-vip enable
+When an inbound policy contains an explicit DENY, with VIPs enabled, you must edit that DENY policy to match VIPs
+```
+set match-vip enable
+```
+"Enable to match packets that have had their destination addresses changed by a VIP (a.k.a NATing)"
+___
 ### Bandwidth widget / max number of monitored interfaces reached
 ```
 di de en
