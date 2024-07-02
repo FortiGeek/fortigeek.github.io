@@ -95,6 +95,10 @@ Log & Report -> Events -> VPN Events -> ACTION:
 ssl-login-fail
 ```
 ---
+### DIAG // Link monitor status
+```
+diagnose sys link-monitor status
+```
 ### LOGS // Link monitor status
 Log & Report -> Events -> System Events -> LOG DESCRIPTION:
 ```
