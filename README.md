@@ -51,6 +51,37 @@ delete 13
 end
 ```
 ---
+## LLDP
+```
+###To configure LLDP reception globally:
+config system global
+    set lldp-reception enable
+end
+```
+###To configure LLDP reception per VDOM:
+```
+To configure LLDP reception per VDOM:
+
+config system setting
+    set lldp-reception enable
+end
+```
+###To configure LLDP reception per interface:
+```
+To configure LLDP reception per interface:
+
+config system interface
+    edit <port>
+        set lldp-reception enable
+    next
+end
+```
+### TSHOOT:
+to confirm its receiving lldp transmissions
+```
+diag sniff pack any 'ether proto 0x88cc' 4 | grep -i in
+```
+---
 ## TSHOOT:
 ### DIAG // SSL-VPN
 Show users connected with SSL-VPN:
