@@ -51,25 +51,20 @@ delete 13
 end
 ```
 ---
-##LLDP
+## LLDP:
 ```
-###To configure LLDP reception globally:
 config system global
     set lldp-reception enable
 end
 ```
-###To configure LLDP reception per VDOM:
+### To configure LLDP reception per VDOM:
 ```
-To configure LLDP reception per VDOM:
-
 config system setting
     set lldp-reception enable
 end
 ```
-###To configure LLDP reception per interface:
+### To configure LLDP reception per interface:
 ```
-To configure LLDP reception per interface:
-
 config system interface
     edit <port>
         set lldp-reception enable
