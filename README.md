@@ -51,7 +51,7 @@ delete 13
 end
 ```
 ---
-## LLDP
+##LLDP
 ```
 ###To configure LLDP reception globally:
 config system global
