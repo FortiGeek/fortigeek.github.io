@@ -7,6 +7,11 @@ set output standard
 end
 ```
 ___
+### Source NAT with VIPs
+create inbound policy from external (this can be a DENY if it's not needed)
+create outbound policy to external with NAT using outgoing interface
+create VIP with ```set nat-source-vip enable```
+___
 ### match-vip enable
 When an inbound policy contains an explicit DENY, with VIPs enabled, you must edit that DENY policy to match VIPs
 ```
