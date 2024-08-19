@@ -9,7 +9,7 @@ end
 ___
 ### Source NAT with VIPs
 create inbound policy from external (this can be a DENY if it's not needed)<br>
-create outbound policy to external with NAT using outgoing interface
+create outbound policy to external with NAT using outgoing interface<br>
 create VIP with ```set nat-source-vip enable```
 ___
 ### match-vip enable
