@@ -8,6 +8,7 @@ end
 ```
 ___
 ### Source NAT with VIPs
+[VIP as Source NAT](https://community.fortinet.com/t5/FortiGate/Technical-Tip-How-to-use-a-VIP-s-External-IP-Address-for-Source/ta-p/189947)<bt>
 create inbound policy from external (this can be a DENY if it's not needed)<br>
 create outbound policy to external with NAT using outgoing interface<br>
 create VIP with ```set nat-source-vip enable```
