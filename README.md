@@ -84,6 +84,19 @@ diag sniff pack any 'ether proto 0x88cc' 4 | grep -i in
 ```
 ---
 ## TSHOOT:
+
+### DIAG // FortiSwitch
+Show VLANs assigned to ports:
+```
+diag switch vlan list
+```
+---
+Show mac-address table:
+```
+diag switch mac-address list
+```
+---
+
 ### DIAG // SSL-VPN
 Show users connected with SSL-VPN:
 ```
