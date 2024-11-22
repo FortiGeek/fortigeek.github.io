@@ -101,6 +101,16 @@ Show interface stats:
 diag switch physical-ports list
 ```
 ---
+Show LLDP info:
+```
+get switch lldp neighbors-summary
+```
+---
+Show LLDP rx/tx send/received stats:
+```
+get switch lldp stats
+```
+---
 ### DIAG // SSL-VPN
 Show users connected with SSL-VPN:
 ```
