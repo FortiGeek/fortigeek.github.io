@@ -96,7 +96,11 @@ Show mac-address table:
 diag switch mac-address list
 ```
 ---
-
+Show interface stats:
+```
+diag switch physical-ports list
+```
+---
 ### DIAG // SSL-VPN
 Show users connected with SSL-VPN:
 ```
