@@ -148,8 +148,16 @@ View HA status info:
 get system ha status
 ```
 ---
-### LOGS // SSL-VPN
-Log & Report -> Events -> VPN Events -> ACTION:
+### LOGS // SSL-VPN [^2]: https://community.fortinet.com/t5/FortiGate/Technical-Tip-SSL-VPN-event-logs-when-successfully-connected/ta-p/331206
+SUCCESS: Log & Report -> Events -> VPN Events -> ACTION:
+```
+tunnel-up
+```
+ATTEMPT: Log & Report -> Events -> VPN Events -> ACTION:
+```
+ssl-new-con
+```
+FAILURE: Log & Report -> Events -> VPN Events -> ACTION:
 ```
 ssl-login-fail
 ```
@@ -171,3 +179,4 @@ Virtual cluster's member state moved
 ```
 ---
 [^1]: https://community.fortinet.com/t5/FortiGate/Technical-Tip-Troubleshooting-unexpected-High-Availability-HA/ta-p/228854  
+[^2]: https://community.fortinet.com/t5/FortiGate/Technical-Tip-SSL-VPN-event-logs-when-successfully-connected/ta-p/331206
