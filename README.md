@@ -148,7 +148,7 @@ View HA status info:
 get system ha status
 ```
 ---
-### LOGS // SSL-VPN [^2]: https://community.fortinet.com/t5/FortiGate/Technical-Tip-SSL-VPN-event-logs-when-successfully-connected/ta-p/331206
+### LOGS // SSL-VPN [^2]:
 SUCCESS: Log & Report -> Events -> VPN Events -> ACTION:
 ```
 tunnel-up
