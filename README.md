@@ -85,6 +85,22 @@ diag sniff pack any 'ether proto 0x88cc' 4 | grep -i in
 ---
 ## TSHOOT:
 
+
+
+### DIAG // IPsec VPN tunnel status
+Show tunnel summary:
+```
+get vpn ipsec tunnel summary
+```
+if output is  selectors(total,up): 1/0 then your tunnel is down
+---
+### DIAG // IPsec VPN phase1 up or down
+check tunnel for phase1 status:
+```
+diagnose vpn ike gateway list name <blablah_phx>
+```
+if output is  selectors(total,up): 1/0 then your tunnel is down
+---
 ### DIAG // FortiSwitch
 Show VLANs assigned to ports:
 ```
