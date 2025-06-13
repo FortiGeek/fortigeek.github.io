@@ -134,6 +134,11 @@ get vpn ssl monitor
 ```
 ---
 ### DIAG // Interface
+Show WAN IP:
+```
+diag sys waninfo
+```
+
 Show interface counters:
 ```
 fnsysctl ifconfig port1
