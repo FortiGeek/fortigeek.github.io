@@ -77,15 +77,24 @@ config system interface
     next
 end
 ```
+----
+## Firmware
+### load firmware to primary slot:
+```
+execute restore image tftp FGT_61E-v6.4.11.M-build2030-FORTINET.out 192.168.1.100
+```
+----
+### load firmware to backup slot:
+```
+execute restore secondary-image tftp FGT_61E-v6.4.11.M-build2030-FORTINET.out 192.168.1.100
+```
+----
 ### TSHOOT:
 to confirm its receiving lldp transmissions
 ```
 diag sniff pack any 'ether proto 0x88cc' 4 | grep -i in
 ```
----
 ## TSHOOT:
-
-
 
 ### DIAG // IPsec VPN tunnel status
 Show tunnel summary:
