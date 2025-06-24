@@ -79,14 +79,19 @@ end
 ```
 ----
 ## Firmware
-### load firmware to primary slot:
+### upload firmware to primary image slot:
 ```
 execute restore image tftp FGT_61E-v6.4.11.M-build2030-FORTINET.out 192.168.1.100
 ```
 ----
-### load firmware to backup slot:
+### upload firmware to secondary image slot:
 ```
 execute restore secondary-image tftp FGT_61E-v6.4.11.M-build2030-FORTINET.out 192.168.1.100
+```
+----
+### boot fortigate to primary or secondary image slot:
+```
+execute set-next-reboot primary/secondary
 ```
 ----
 ### TSHOOT:
