@@ -32,16 +32,13 @@ The FortiGate Clustering Protocol (FGCP) is a proprietary HA solution whereby Fo
 - Monitor traffic flowing in and out of the interfaces.
 ## HA - CONFIG
 
-
-
->[!IMPORTANT]
->where members are in different locations, ensure the heartbeat lost intervals and thresholds are longer than the possible latency in the links
-
 ## HA - TSHOOT
 >[!NOTE]
->All synchronization activity takes place over the HA heartbeat link using **TCP/UDP 703** packets.  
-View HA history [^1]: 
+>All synchronization activity takes place over the HA heartbeat link using **TCP/UDP 703** packets.
 
+>[!IMPORTANT]
+>Ensure the heartbeat lost intervals and thresholds are longer than the possible latency in links.  
+View HA history [^1]: 
 ```
 diagnose sys ha history read
 ```
