@@ -1,11 +1,12 @@
 # FortiTutorials
-## HA - CONFIG
+# HA
 **FortiGate Clustering Protocol (FGCP)**
 FGCP provides a solution for two key requirements of critical enterprise networking components: 
-enhanced reliability
-increased performance.
+_Enhanced Reliability_\
+_Increased performance_
+## HA - CONFIG
 ## HA - TSHOOT
-View HA history [^1]:  
+View HA history [^1]: 
 ```
 diagnose sys ha history read
 ```
