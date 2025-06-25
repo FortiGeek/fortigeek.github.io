@@ -31,7 +31,17 @@ The FortiGate Clustering Protocol (FGCP) is a proprietary HA solution whereby Fo
 - Enable the session synchronization option in daily operation (see FGSP basic peer setup).
 - Monitor traffic flowing in and out of the interfaces.
 ## HA - CONFIG
-
+```
+config system ha
+    set group-id 1
+    set group-name "AZ-EDGE-CL01"
+    set mode a-p
+    set password ENC u+FWOhgbEXj4KUsEgujj4n/WnI6ekcKVQd3+2re63KYMEHJEPuhuDEFU5B833viDU5+JbMsO8SEOTrrn/qV2pstFPaCry4hcxyLBbU/cR/rW4ewgqu1XfOmkDDvjuKBLIs+0Ft9aSvtYZJ2TEKE6LPcp4306vTY34QKfkaG/GwsrL+Hc9iWL941Yx+/0PUj0kMDOHA==
+    set hbdev "internal2" 0 "internal3" 0 
+    set session-pickup enable
+    set override disable
+end
+```
 ## HA - TSHOOT
 >[!NOTE]
 >All synchronization activity takes place over the HA heartbeat link using **TCP/UDP 703** packets.
