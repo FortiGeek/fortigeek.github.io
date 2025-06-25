@@ -31,16 +31,14 @@ The FortiGate Clustering Protocol (FGCP) is a proprietary HA solution whereby Fo
 - Enable the session synchronization option in daily operation (see FGSP basic peer setup).
 - Monitor traffic flowing in and out of the interfaces.
 ## HA - CONFIG
->[!TIP]
->Changing the host name makes it easier to identify individual cluster units in the cluster operations.
-
 ### Define hostname (if not already set)
 ```
 config system global
     set hostname AZ-EDGE01-PRI
 end
 ```
-
+>[!TIP]
+>Changing the host name makes it easier to identify individual cluster units in the cluster operations.
 ### Recommended Active-Passive example config:
 ```
 config system ha
@@ -53,7 +51,10 @@ config system ha
     set override disable
 end
 ```
-### Repeat steps 1 to 5 on the other FortiGate devices to join the cluster, giving each device a unique hostname and device priority
+>[!WARNING]
+> Connectivity with the FortiGate may be temporarily lost as the HA cluster negotiates and the FGCP changes the MAC addresses of the FortiGate's interfaces
+
+### Repeat on the other FortiGate devices joining the cluster, giving each device a unique hostname and device priority
 ## HA - TSHOOT
 >[!NOTE]
 >All synchronization activity takes place over the HA heartbeat link using **TCP/UDP 703** packets.
