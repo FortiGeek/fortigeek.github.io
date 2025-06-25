@@ -212,5 +212,8 @@ Log & Report -> Events -> HA Events -> MESSAGE:
 Virtual cluster's member state moved
 ```
 ---
+# HA
+
+---
 [^1]: https://community.fortinet.com/t5/FortiGate/Technical-Tip-Troubleshooting-unexpected-High-Availability-HA/ta-p/228854  
 [^2]: https://community.fortinet.com/t5/FortiGate/Technical-Tip-SSL-VPN-event-logs-when-successfully-connected/ta-p/331206
