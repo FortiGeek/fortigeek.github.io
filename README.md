@@ -60,7 +60,6 @@ end
 ## HA - TSHOOT
 >[!NOTE]
 >All synchronization activity takes place over the HA heartbeat link using **TCP/UDP 703** packets.
-
 >[!IMPORTANT]
 >Ensure the heartbeat lost intervals and thresholds are longer than the possible latency in links.
 
