@@ -55,7 +55,7 @@ config system ha
 end
 ```
 >[!TIP]
->Enable <code>set override enable</code> and increase the priority (the highest number 255) of the unit that should always be primary (master).
+>Enable <code>set override enable</code> and increase the <code>priority</code> (the highest number 255) of the unit that should always be primary (master).
 ### Repeat on the other FortiGate devices joining the cluster, giving each device a unique hostname and lesser device priority
 ## HA - TSHOOT
 >[!NOTE]
