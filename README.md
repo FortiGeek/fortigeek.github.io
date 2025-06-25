@@ -24,7 +24,7 @@ The FortiGate Clustering Protocol (FGCP) is a proprietary HA solution whereby Fo
       -  Other heartbeat interface traffic required to synchronize IPsec states, IPsec keys, routing tables, configuration changes, and so on is usually negligible.
   - Lower throughput HA heartbeat interfaces may increase failover time if they cannot handle the higher demand during critical HA events.
     - The amount of heartbeat traffic can be reduced by:
-      - Turning off session pickup if it is not needed
+      - Turning off <code>session-pickup</code> if it is not needed
       - Enabling <code>session-pickup-delay</code> to reduce the number of sessions that are synchronized
       - Using the <code>session-sync-dev</code> option to move session synchronization traffic off of the heartbeat link
 
