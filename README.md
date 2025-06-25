@@ -1,4 +1,30 @@
 # FortiTutorials
+## HA - CONFIG
+**FortiGate Clustering Protocol (FGCP)**
+FGCP provides a solution for two key requirements of critical enterprise networking components: 
+enhanced reliability
+increased performance.
+## HA - TSHOOT
+View HA history [^1]:  
+```
+diagnose sys ha history read
+```
+![diag sys ha history read](https://github.com/FortiGeek/fortigeek.github.io/blob/main/gh-DIAG-ha-01.png)  
+  
+**Messages worth identifying**  
++ _HA state change time_  
++ _link status changed_ [0 = **down** / 1 = **up**]  
++ _heartbeats from FG100ETK18..95 are lost on all hbdev_  
++ _<serial #> is elected as the cluster primary of <#> member_
+> [!NOTE] 
+> The history is limited to 512 entries and is persistent to reboots; each unit keeps track of its own history of events.  
+> It'll override the oldest events first when 512 entries are reached.
+
+View HA status info:
+```
+get system ha status
+```
+---
 ## Config:
 ### Console term length 0 / no pager
 ```
@@ -161,27 +187,6 @@ Show interface info/stats:
 diag hardware deviceinfo nic interface
 ```
 ---
-### DIAG // HA
-View HA history [^1]:  
-```
-diagnose sys ha history read
-```
-![diag sys ha history read](https://github.com/FortiGeek/fortigeek.github.io/blob/main/gh-DIAG-ha-01.png)  
-  
-**Messages worth identifying**  
-+ _HA state change time_  
-+ _link status changed_ [0 = **down** / 1 = **up**]  
-+ _heartbeats from FG100ETK18..95 are lost on all hbdev_  
-+ _<serial #> is elected as the cluster primary of <#> member_
-> [!NOTE] 
-> The history is limited to 512 entries and is persistent to reboots; each unit keeps track of its own history of events.  
-> It'll override the oldest events first when 512 entries are reached.
-
-View HA status info:
-```
-get system ha status
-```
----
 ### LOGS // SSL-VPN [^2]:
 SUCCESS: Log & Report -> Events -> VPN Events -> ACTION:
 ```
@@ -211,9 +216,6 @@ Log & Report -> Events -> HA Events -> MESSAGE:
 ```
 Virtual cluster's member state moved
 ```
----
-# HA
-
 ---
 [^1]: https://community.fortinet.com/t5/FortiGate/Technical-Tip-Troubleshooting-unexpected-High-Availability-HA/ta-p/228854  
 [^2]: https://community.fortinet.com/t5/FortiGate/Technical-Tip-SSL-VPN-event-logs-when-successfully-connected/ta-p/331206
