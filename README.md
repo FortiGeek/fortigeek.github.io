@@ -6,6 +6,10 @@ The FortiGate Clustering Protocol (FGCP) is a proprietary HA solution whereby Fo
 - All FortiGates in the cluster must be the _same model_ and have the _same firmware_ installed.  
 - Cluster members must also have the same hardware configuration (such as the same number of hard disks).  
 - All cluster members share the same configurations except for their host name and priority in the HA settings.
+The following are best practices for general cluster operation:
+- Ensure that heartbeat communication is present (see HA heartbeat interface).
+- Enable the session synchronization option in daily operation (see FGSP basic peer setup).
+- Monitor traffic flowing in and out of the interfaces.
 ## HA - CONFIG
 ## HA - TSHOOT
 View HA history [^1]: 
