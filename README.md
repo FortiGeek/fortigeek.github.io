@@ -8,13 +8,16 @@ The FortiGate Clustering Protocol (FGCP) is a proprietary HA solution whereby Fo
 - All cluster members share the same configurations except for their host name and priority in the HA settings.
 
 The following are best practices for general cluster operation:
-- Ensure that heartbeat communication is present (see HA heartbeat interface).
+- Ensure proper heartbeat communication is present
+  - As a best practice, it is recommended to isolate the heartbeat devices from the user networks by connecting the heartbeat devices to a dedicated switch that is not connected to any network.
+  - The heartbeat packets contain sensitive information about the cluster configuration and may use a considerable amount of network bandwidth.
 - Enable the session synchronization option in daily operation (see FGSP basic peer setup).
 - Monitor traffic flowing in and out of the interfaces.
 ## HA - CONFIG
+
+## HA - TSHOOT
 >[!TIP]
 >All synchronization activity takes place over the HA heartbeat link using **TCP/UDP 703** packets.
-## HA - TSHOOT
 View HA history [^1]: 
 
 ```
