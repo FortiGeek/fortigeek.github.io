@@ -3,7 +3,7 @@
 **FortiGate Clustering Protocol (FGCP)**  
 The FortiGate Clustering Protocol (FGCP) is a proprietary HA solution whereby FortiGates can find other member FortiGates to negotiate and create a cluster.  
 - A FortiGate HA cluster consists of at least two FortiGates (members) configured for HA operation.  
-- All FortiGates in the cluster must be the _same model_ and have the _same firmware_ installed.  
+- All FortiGates in the cluster must be the _**same model**_ and have the _**same firmware**_ installed.  
 - Cluster members must also have the same hardware configuration (such as the same number of hard disks).  
 - All cluster members share the same configurations except for their host name and priority in the HA settings.
 
@@ -15,14 +15,25 @@ The FortiGate Clustering Protocol (FGCP) is a proprietary HA solution whereby Fo
 - Heartbeat Interface Priority:
     -  In all cases, the heartbeat interface with the highest priority is used for all HA heartbeat communication.
     -  If the interface fails or becomes disconnected, then the selected heartbeat interface with the next highest priority handles all HA heartbeat communication.
-If more than one heartbeat interface has the same priority, the **heartbeat interface with the highest priority that is also highest in the heartbeat _interface list_** is used for all HA heartbeat communication.
+    - If more than one heartbeat interface has the same priority, the **heartbeat interface with the highest priority that is also highest in the heartbeat _interface list_** is used for all HA heartbeat communication.
+- Heartbeat bandwidth requirements:
+  - The amount of traffic required for session synchronization depends on the connections per second (CPS) that the cluster is processing, since only new sessions (and session table updates) need to be synchronized.
+  -  The majority of the traffic processed by the HA heartbeat interface is session synchronization traffic
+      -  Other heartbeat interface traffic required to synchronize IPsec states, IPsec keys, routing tables, configuration changes, and so on is usually negligible.
+> [!IMPORTANT]
+> Lower throughput HA heartbeat interfaces may increase failover time if they cannot handle the higher demand during these events.
 - Enable the session synchronization option in daily operation (see FGSP basic peer setup).
 - Monitor traffic flowing in and out of the interfaces.
 ## HA - CONFIG
 >[!NOTE]
 >The higher the number, the higher the priority.
+
+>[!CAUTION]
+>HA heartbeat packets should be _**encrypted and authenticated**_ if the cluster interfaces that send HA heartbeat packets are also connected to the networks.
+
 >[!IMPORTANT]
 >where members are in different locations, ensure the heartbeat lost intervals and thresholds are longer than the possible latency in the links
+
 ## HA - TSHOOT
 >[!NOTE]
 >All synchronization activity takes place over the HA heartbeat link using **TCP/UDP 703** packets.  
