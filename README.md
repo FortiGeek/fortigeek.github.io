@@ -14,7 +14,7 @@ The following are best practices for general cluster operation:
 - Enable the session synchronization option in daily operation (see FGSP basic peer setup).
 - Monitor traffic flowing in and out of the interfaces.
 ## HA - CONFIG
-
+By default, _two interfaces_ are configured to be heartbeat interfaces on most FortiGate models to avoid [split-brain](https://docs.fortinet.com/document/fortigate/7.2.4/administration-guide/946059/troubleshoot-an-ha-formation#split-brain) scenarios.
 ## HA - TSHOOT
 >[!TIP]
 >All synchronization activity takes place over the HA heartbeat link using **TCP/UDP 703** packets.
