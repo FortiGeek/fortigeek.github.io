@@ -31,13 +31,24 @@ The FortiGate Clustering Protocol (FGCP) is a proprietary HA solution whereby Fo
 - Enable the session synchronization option in daily operation (see FGSP basic peer setup).
 - Monitor traffic flowing in and out of the interfaces.
 ## HA - CONFIG
+>[!TIP]
+>Changing the host name makes it easier to identify individual cluster units in the cluster operations.
+
+### Define hostname (if not already set)
+```
+config system global
+    set hostname Example1_host
+end
+```
+
+### Recommended Active-Passive example config:
 ```
 config system ha
     set group-id 1
     set group-name "AZ-EDGE-CL01"
     set mode a-p
-    set password ENC u+FWOhgbEXj4KUsEgujj4n/WnI6ekcKVQd3+2re63KYMEHJEPuhuDEFU5B833viDU5+JbMsO8SEOTrrn/qV2pstFPaCry4hcxyLBbU/cR/rW4ewgqu1XfOmkDDvjuKBLIs+0Ft9aSvtYZJ2TEKE6LPcp4306vTY34QKfkaG/GwsrL+Hc9iWL941Yx+/0PUj0kMDOHA==
-    set hbdev "internal2" 0 "internal3" 0 
+    set password ENC u+FWOhgbEXj4KUsEgujjv4n/WnI6ekcKVQd3+2re63KYMEHJEPuhuDEFU5B8viDU5+JbMsO8SEOTrrn/qV2pstFPaCry4hcxyLBbU/cR/rW4ewgqu1XfOmkDDvjuKBLIs+0Ft9aSvtYZJ2TEKE6LPcp4306vTY34QKfkaG/3GwsrL+Hc9iWL941Yx+/0PUj0kMDOHA==
+    set hbdev "<internal7>" 0 "<internal8>" 0 
     set session-pickup enable
     set override disable
 end
