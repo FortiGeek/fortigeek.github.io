@@ -11,13 +11,19 @@ The FortiGate Clustering Protocol (FGCP) is a proprietary HA solution whereby Fo
 - Heartbeat interfaces:
   - It is recommended to isolate the heartbeat devices from the user networks by **connecting the heartbeat devices directly to each other (back-to-back)** or to a **dedicated switch** that is not connected to any network.
   - The heartbeat packets contain sensitive information about the cluster configuration and **may use a considerable amount of network bandwidth**.
+  - Heartbeat Interface Priority:
+    -  In all cases, the heartbeat interface with the highest priority is used for all HA heartbeat communication.
+    -  If the interface fails or becomes disconnected, then the selected heartbeat interface with the next highest priority handles all HA heartbeat communication.
+>[!NOTE]
+>If more than one heartbeat interface has the same priority, the **heartbeat interface with the highest priority that is also highest in the heartbeat _interface list_** is used for all HA heartbeat communication.
 - Enable the session synchronization option in daily operation (see FGSP basic peer setup).
 - Monitor traffic flowing in and out of the interfaces.
 ## HA - CONFIG
-By default, _two interfaces_ are configured to be heartbeat interfaces on most FortiGate models to avoid [split-brain](https://docs.fortinet.com/document/fortigate/7.2.4/administration-guide/946059/troubleshoot-an-ha-formation#split-brain) scenarios.
+>[!WARNING]
+>Configure _two interfaces_ to be heartbeat interfaces to avoid [split-brain](https://docs.fortinet.com/document/fortigate/7.2.4/administration-guide/946059/troubleshoot-an-ha-formation#split-brain) scenarios.
 ## HA - TSHOOT
->[!TIP]
->All synchronization activity takes place over the HA heartbeat link using **TCP/UDP 703** packets.
+>[!NOTE]
+>All synchronization activity takes place over the HA heartbeat link using **TCP/UDP 703** packets.  
 View HA history [^1]: 
 
 ```
