@@ -1,20 +1,24 @@
 # FortiTutorials
 # HA
+FortiGate HA offers several solutions for adding redundancy in the case where a failure occurs on the FortiGate, or is detected by the FortiGate through monitored links, routes, and other health checks. These solutions support fast failover to avoid lengthy network outages and disruptions to your traffic.  
+
 **FortiGate Clustering Protocol (FGCP)**  
 FGCP provides a solution for two key requirements of critical enterprise networking components: _Enhanced Reliability_ & _Increased performance_
-1. **Enhanced Reliability** provides
+1. **Enhanced Reliability** provides:
     - Failover protection
     - Link failover protection
     - Remote link failover protection
     - Session failover protection for most IPv4 and IPv6 sessions
 2. **Increased performance** can be achieved though:
-    - active-active HA load balancing
+    - Active-active HA load balancing
 ## HA - CONFIG
 ## HA - TSHOOT
 View HA history [^1]: 
+
 ```
 diagnose sys ha history read
 ```
+
 ![diag sys ha history read](https://github.com/FortiGeek/fortigeek.github.io/blob/main/gh-DIAG-ha-01.png)  
   
 **Messages worth identifying**  
@@ -27,11 +31,14 @@ diagnose sys ha history read
 > It'll override the oldest events first when 512 entries are reached.
 
 View HA status info:
+
 ```
 get system ha status
 ```
+
 ---
 ## Config:
+
 ### Console term length 0 / no pager
 ```
 config system console
