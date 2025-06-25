@@ -19,7 +19,8 @@ If more than one heartbeat interface has the same priority, the **heartbeat inte
 - Enable the session synchronization option in daily operation (see FGSP basic peer setup).
 - Monitor traffic flowing in and out of the interfaces.
 ## HA - CONFIG
-
+>[!NOTE]
+>The higher the number, the higher the priority.
 ## HA - TSHOOT
 >[!NOTE]
 >All synchronization activity takes place over the HA heartbeat link using **TCP/UDP 703** packets.  
