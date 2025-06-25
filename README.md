@@ -20,8 +20,7 @@ The FortiGate Clustering Protocol (FGCP) is a proprietary HA solution whereby Fo
   - The amount of traffic required for session synchronization depends on the connections per second (CPS) that the cluster is processing, since only new sessions (and session table updates) need to be synchronized.
   -  The majority of the traffic processed by the HA heartbeat interface is session synchronization traffic
       -  Other heartbeat interface traffic required to synchronize IPsec states, IPsec keys, routing tables, configuration changes, and so on is usually negligible.
-> [!IMPORTANT]
-> Lower throughput HA heartbeat interfaces may increase failover time if they cannot handle the higher demand during these events.
+  - Lower throughput HA heartbeat interfaces may increase failover time if they cannot handle the higher demand during critical HA events.
 - Enable the session synchronization option in daily operation (see FGSP basic peer setup).
 - Monitor traffic flowing in and out of the interfaces.
 ## HA - CONFIG
