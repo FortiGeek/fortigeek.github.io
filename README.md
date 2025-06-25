@@ -1,14 +1,14 @@
 # FortiTutorials
 # HA
 **FortiGate Clustering Protocol (FGCP)**
-FGCP provides a solution for two key requirements of critical enterprise networking components:  
+FGCP provides a solution for two key requirements of critical enterprise networking components:
 _Enhanced Reliability_ provides
-- Failover protection
-- Link failover protection
-- Remote link failover protection
-- Session failover protection for most IPv4 and IPv6 sessions\
+  - Failover protection
+  - Link failover protection
+  - Remote link failover protection
+  - Session failover protection for most IPv4 and IPv6 sessions  
 _Increased performance_ can be achieved though:
-- active-active HA load balancing
+  - active-active HA load balancing
 ## HA - CONFIG
 ## HA - TSHOOT
 View HA history [^1]: 
