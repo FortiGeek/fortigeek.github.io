@@ -1,7 +1,5 @@
 # FortiTutorials
 # HA
-FortiGate HA offers several solutions for adding redundancy in the case where a failure occurs on the FortiGate, or is detected by the FortiGate through monitored links, routes, and other health checks. These solutions support fast failover to avoid lengthy network outages and disruptions to your traffic.  
-
 **FortiGate Clustering Protocol (FGCP)**  
 The FortiGate Clustering Protocol (FGCP) is a proprietary HA solution whereby FortiGates can find other member FortiGates to negotiate and create a cluster.  
 - A FortiGate HA cluster consists of at least two FortiGates (members) configured for HA operation.  
