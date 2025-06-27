@@ -280,10 +280,26 @@ Log & Report -> Events -> HA Events -> MESSAGE:
 Virtual cluster's member state moved
 ```
 ---
-### TSHOOT // DDoS Anomaly
+## TSHOOT // DDoS Anomaly
+View DDoS-triggered logs:
+```
 Log & Report -> Anomaly
-Dashboard > Users & Devices > Quarantine
-> right-click on banned IP and "Delete" to remove
+```
+Check for blocked IPs via CLI (also shows cause):
+```
+diag user quarantine list all
+```
+Example output:
+```
+UNIQUEHOST87-P (VDOM_04) # diag user quarantine list all
+src-ip-addr       created                  expires                  cause            
+3.85.220.164      Fri Jun 27 11:23:43 2025 Fri Jun 27 11:38:43 2025 DOS              
+34.230.56.167     Fri Jun 27 11:35:36 2025 Fri Jun 27 11:50:36 2025 DOS  
+```
+Check for blocked IPs via GUI:
+```
+Dashboard > Users & Devices > Quarantine (right-click on banned IP and "Delete" to remove banned IP)
+```
 ---
 [^1]: https://community.fortinet.com/t5/FortiGate/Technical-Tip-Troubleshooting-unexpected-High-Availability-HA/ta-p/228854  
 [^2]: https://community.fortinet.com/t5/FortiGate/Technical-Tip-SSL-VPN-event-logs-when-successfully-connected/ta-p/331206
