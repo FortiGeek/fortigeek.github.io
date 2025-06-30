@@ -247,7 +247,7 @@ fnsysctl ifconfig port1
 ```
 Show interface info/stats:
 ```
-diag hardware deviceinfo nic interface
+diag hardware deviceinfo nic x1
 ```
 ---
 ### LOGS // SSL-VPN [^2]:
