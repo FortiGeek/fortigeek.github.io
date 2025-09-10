@@ -302,8 +302,7 @@ Check for blocked IPs via GUI:
 ```
 Dashboard > Users & Devices > Quarantine (right-click on banned IP and "Delete" to remove banned IP)
 ```
-```
-FAZ
+## FAZ
 [How to Apply a User Filter to a Report for Forensic Analysis ]([https://community.fortinet.com/t5/FortiGate/Technical-Tip-Firewall-VIP-difference-in-srcintf-filter-and/ta-p/259694](https://community.fortinet.com/t5/FortiAnalyzer/How-to-Apply-a-User-Filter-to-a-Report-for-Forensic-Analysis/ta-p/194947))<br><br>
 ```
 ---
