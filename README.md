@@ -98,7 +98,8 @@ end
 ___
 ### Source NAT with VIPs<br><br>
 When Central SNAT is disabled, 'extintf' defines which source interface can be used in a firewall policy that references the Virtual IP.<br><br>
-[VIP as Source NAT](https://community.fortinet.com/t5/FortiGate/Technical-Tip-How-to-use-a-VIP-s-External-IP-Address-for-Source/ta-p/189947)<br><br>
+[Technical Tip: Firewall VIP - difference in 'srcintf-filter' and 'extintf'](https://community.fortinet.com/t5/FortiGate/Technical-Tip-Firewall-VIP-difference-in-srcintf-filter-and/ta-p/259694)<br><br>
+[Technical Tip: How to use a VIP's External IP Address for Source NAT when Central NAT is disabled ](https://community.fortinet.com/t5/FortiGate/Technical-Tip-How-to-use-a-VIP-s-External-IP-Address-for-Source/ta-p/189947)<br><br>
 create inbound policy from external (this can be a DENY if it's not needed)<br>
 create outbound policy to external with NAT using outgoing interface<br>
 create VIP with ```set nat-source-vip enable```
@@ -300,6 +301,10 @@ src-ip-addr       created                  expires                  cause
 Check for blocked IPs via GUI:
 ```
 Dashboard > Users & Devices > Quarantine (right-click on banned IP and "Delete" to remove banned IP)
+```
+```
+FAZ
+[How to Apply a User Filter to a Report for Forensic Analysis ]([https://community.fortinet.com/t5/FortiGate/Technical-Tip-Firewall-VIP-difference-in-srcintf-filter-and/ta-p/259694](https://community.fortinet.com/t5/FortiAnalyzer/How-to-Apply-a-User-Filter-to-a-Report-for-Forensic-Analysis/ta-p/194947))<br><br>
 ```
 ---
 [^1]: https://community.fortinet.com/t5/FortiGate/Technical-Tip-Troubleshooting-unexpected-High-Availability-HA/ta-p/228854  
