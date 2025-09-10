@@ -97,7 +97,7 @@ end
 ```
 ___
 ### Source NAT with VIPs<br><br>
-When Central SNAT is disabled, 'extintf' defines which source interface can be used in a firewall policy that references the Virtual IP.<br>
+When Central SNAT is disabled, 'extintf' defines which source interface can be used in a firewall policy that references the Virtual IP.<br><br>
 [VIP as Source NAT](https://community.fortinet.com/t5/FortiGate/Technical-Tip-How-to-use-a-VIP-s-External-IP-Address-for-Source/ta-p/189947)<br><br>
 create inbound policy from external (this can be a DENY if it's not needed)<br>
 create outbound policy to external with NAT using outgoing interface<br>
