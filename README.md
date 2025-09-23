@@ -149,12 +149,13 @@ end
 ```
 ---
 ## LLDP:
+### Enable LLDP reception/transmission globally (config global):
 ```
 config system global
     set lldp-reception enable
 end
 ```
-### To configure LLDP reception per VDOM (root vdom):
+###  Once configured globally, define LLDP reception/transmission per VDOM (vdom):
 ```
 config system setting
     set lldp-reception enable
