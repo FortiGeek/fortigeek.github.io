@@ -154,7 +154,7 @@ config system global
     set lldp-reception enable
 end
 ```
-### To configure LLDP reception per VDOM:
+### To configure LLDP reception per VDOM (root vdom):
 ```
 config system setting
     set lldp-reception enable
