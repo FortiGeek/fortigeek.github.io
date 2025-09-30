@@ -306,10 +306,10 @@ Dashboard > Users & Devices > Quarantine (right-click on banned IP and "Delete" 
 ## FAZ
 [Conditions for FortiView ]([https://community.fortinet.com/t5/FortiAIOps/Troubleshooting-Tip-How-to-troubleshoot-missing-Application-Data/ta-p/387218])<br><br>
 FortiView apps not displaying:<br>
-*The application usage can be seen under the 'FortiView Applications by Bytes' options present under the FortiGate Dashboard options.<br>
-*For the FortiGate to detect applications, the following conditions are necessary:<br>
-*The 'Application Control default' profile must be enabled on the Firewall policy.<br>
-**Make sure that the FortiGate unit contains a valid FortiGuard subscription and can reach the FortiGuard server.<br>
+* The application usage can be seen under the 'FortiView Applications by Bytes' options present under the FortiGate Dashboard options.<br>
+* For the FortiGate to detect applications, the following conditions are necessary:<br>
+** The 'Application Control default' profile must be enabled on the Firewall policy.<br>
+** Make sure that the FortiGate unit contains a valid FortiGuard subscription and can reach the FortiGuard server.<br>
 Once these conditions are satisfied, the application category will be visible on the 'FortiView Applications by Bytes' Dashboard.<br><br>
 [How to Apply a User Filter to a Report for Forensic Analysis ]([https://community.fortinet.com/t5/FortiGate/Technical-Tip-Firewall-VIP-difference-in-srcintf-filter-and/ta-p/259694](https://community.fortinet.com/t5/FortiAnalyzer/How-to-Apply-a-User-Filter-to-a-Report-for-Forensic-Analysis/ta-p/194947))<br><br>
 ```
