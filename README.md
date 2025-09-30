@@ -313,6 +313,8 @@ FortiView apps not displaying:<br>
 Once these conditions are satisfied, the application category will be visible on the 'FortiView Applications by Bytes' Dashboard.<br><br>
 [How to Apply a User Filter to a Report for Forensic Analysis ]([https://community.fortinet.com/t5/FortiGate/Technical-Tip-Firewall-VIP-difference-in-srcintf-filter-and/ta-p/259694](https://community.fortinet.com/t5/FortiAnalyzer/How-to-Apply-a-User-Filter-to-a-Report-for-Forensic-Analysis/ta-p/194947))<br><br>
 ```
+```
+FortiGuard provides several sample files to test the AV configuration on the FortiGate, which are available to download from https://www.fortiguard.com/sample-files. Test the Virus Outbreak Prevention feature by downloading VO Sample file. See Example 3: VO sample file.
 ---
 [^1]: https://community.fortinet.com/t5/FortiGate/Technical-Tip-Troubleshooting-unexpected-High-Availability-HA/ta-p/228854  
 [^2]: https://community.fortinet.com/t5/FortiGate/Technical-Tip-SSL-VPN-event-logs-when-successfully-connected/ta-p/331206
