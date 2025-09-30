@@ -304,6 +304,15 @@ Check for blocked IPs via GUI:
 Dashboard > Users & Devices > Quarantine (right-click on banned IP and "Delete" to remove banned IP)
 ```
 ## FAZ
+FortiView apps not displaying:
+
+    The application usage can be seen under the 'FortiView Applications by Bytes' options present under the FortiGate Dashboard options. 
+     For the FortiGate to detect applications, the following conditions are necessary: 
+        The 'Application Control default' profile must be enabled on the Firewall policy.
+        Make sure that the FortiGate unit contains a valid FortiGuard subscription and can reach the FortiGuard server. 
+    Once these conditions are satisfied, the application category will be visible on the 'FortiView Applications by Bytes' Dashboard.
+
+[Conditions for FortiView ]([https://community.fortinet.com/t5/FortiAIOps/Troubleshooting-Tip-How-to-troubleshoot-missing-Application-Data/ta-p/387218])<br><br>
 [How to Apply a User Filter to a Report for Forensic Analysis ]([https://community.fortinet.com/t5/FortiGate/Technical-Tip-Firewall-VIP-difference-in-srcintf-filter-and/ta-p/259694](https://community.fortinet.com/t5/FortiAnalyzer/How-to-Apply-a-User-Filter-to-a-Report-for-Forensic-Analysis/ta-p/194947))<br><br>
 ```
 ---
