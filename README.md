@@ -322,5 +322,42 @@ FortiGuard Display Web Filter Categories
 ```
 get webfilter categories
 ```
+---
+Zero-out "edit 234" to "edit 0"
+---
+```
+Find what: edit .*
+Replace with: edit 0
+Regular expression: enabled
+```
+# Notepad++ tips
+---
+Find & Replace “set nat enable” with
+---
+```
+set nat enable\nset ippool enable\nset poolname "WAN-{$VDOM_WAN_IP}"
+set extintf "any"\nnat source-vip enable\nset srcintf-filter "ABC_DC01-CLIENT" "XYZ_DR01-CLIENT"
+```
+---
+add to the **start** of each line
+---
+```
+Press Ctrl+F > click on the Replace tab > check Regular Expression option
+now add ^ in the Find textbox
+now the "text" you want at the start of each line in the Replace textbox.
+```
+---
+add to the **end** of each line
+---
+```
+Press Ctrl+F > click on the Replace tab > check Regular Expression option
+now add $ in the Find textbox
+now the "text" you want at the end of each line in the Replace textbox.
+```
+
+
+
+
+
 [^1]: https://community.fortinet.com/t5/FortiGate/Technical-Tip-Troubleshooting-unexpected-High-Availability-HA/ta-p/228854  
 [^2]: https://community.fortinet.com/t5/FortiGate/Technical-Tip-SSL-VPN-event-logs-when-successfully-connected/ta-p/331206
