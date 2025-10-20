@@ -203,7 +203,10 @@ if output is  selectors(total,up): 1/0 then your tunnel is down
 ### DIAG // IPsec VPN phase1 up or down
 check tunnel for phase1 status:
 ```
-diagnose vpn ike gateway list name <blablah_phx>
+diagnose vpn ike gateway list name <Cloud_1>
+```
+```
+get vpn ipsec tunnel details
 ```
 if output is  selectors(total,up): 1/0 then your tunnel is down
 ---
