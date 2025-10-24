@@ -286,6 +286,10 @@ Log & Report -> Events -> HA Events -> MESSAGE:
 Virtual cluster's member state moved
 ```
 ---
+## TSHOOT // Transceivers installed & status
+```
+get system interface transceiver <interface>
+```
 ## TSHOOT // DDoS Anomaly
 View DDoS-triggered logs:
 ```
