@@ -236,6 +236,11 @@ Show LLDP rx/tx send/received stats:
 get switch lldp stats
 ```
 ---
+Verify LDAP Creds:
+```
+diagnose test authserver ldap SDC_LDAP <username> <password>
+```
+---
 Start CLI AUTH debugs:
 ```
 di de res
