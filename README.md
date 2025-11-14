@@ -237,6 +237,7 @@ get switch lldp stats
 ```
 ---
 Verify LDAP Creds:
+diagnose test authserver ldap \<server> \<username> \<password>
 ```
 diagnose test authserver ldap SDC_LDAP <username> <password>
 ```
