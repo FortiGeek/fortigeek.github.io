@@ -236,7 +236,6 @@ Show LLDP rx/tx send/received stats:
 get switch lldp stats
 ```
 ---
----
 Verify RADIUS AUTH via CLI:  
 diagnose test authserver radius <server> pap <user> <password>
 ```
