@@ -236,6 +236,14 @@ Show LLDP rx/tx send/received stats:
 get switch lldp stats
 ```
 ---
+Start CLI AUTH debugs:
+```
+di de res
+di de cons time en
+di de app fnbamd -1
+di de en
+```
+---
 Verify RADIUS AUTH via CLI:  
 diagnose test authserver radius \<server> pap \<user> \<password>
 ```
