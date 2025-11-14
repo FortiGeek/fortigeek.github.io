@@ -236,6 +236,13 @@ Show LLDP rx/tx send/received stats:
 get switch lldp stats
 ```
 ---
+---
+Verify RADIUS AUTH via CLI:  
+diagnose test authserver radius <server> pap <user> <password>
+```
+diagnose test authserver radius 
+```
+---
 ### DIAG // SSL-VPN
 Show users connected with SSL-VPN:
 ```
