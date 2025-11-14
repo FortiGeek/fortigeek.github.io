@@ -237,7 +237,7 @@ get switch lldp stats
 ```
 ---
 Verify RADIUS AUTH via CLI:  
-diagnose test authserver radius <server> pap <user> <password>
+diagnose test authserver radius \<server> pap \<user> \<password>
 ```
 diagnose test authserver radius 
 ```
