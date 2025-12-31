@@ -382,7 +382,7 @@ now add $ in the Find textbox
 now the "text" you want at the end of each line in the Replace textbox.
 ```
 ---
-ASA ACL-DROP packet cap
+ASA ACL-DROP packet cap[^3]:
 ---
 ```
 cap asp-drop type asp-drop acl-drop
@@ -394,3 +394,4 @@ cap asp-drop type asp-drop acl-drop
 
 [^1]: https://community.fortinet.com/t5/FortiGate/Technical-Tip-Troubleshooting-unexpected-High-Availability-HA/ta-p/228854  
 [^2]: https://community.fortinet.com/t5/FortiGate/Technical-Tip-SSL-VPN-event-logs-when-successfully-connected/ta-p/331206
+[^3]: https://www.cisco.com/c/en/us/support/docs/security/asa-5500-x-series-next-generation-firewalls/118097-configure-asa-00.html#toc-hId--1450804662
