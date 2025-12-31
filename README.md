@@ -381,6 +381,12 @@ Press Ctrl+F > click on the Replace tab > check Regular Expression option
 now add $ in the Find textbox
 now the "text" you want at the end of each line in the Replace textbox.
 ```
+---
+ASA ACL-DROP packet cap
+---
+```
+cap asp-drop type asp-drop acl-drop
+```
 
 
 
