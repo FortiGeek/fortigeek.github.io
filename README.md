@@ -170,6 +170,11 @@ config system interface
 end
 ```
 ----
+## Confirm IP address' relation to GEO IP Database
+```
+diagnose geoip ip2country 
+```
+----
 ## Firmware
 ### upload firmware to primary image slot:
 ```
