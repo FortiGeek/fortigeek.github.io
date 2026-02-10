@@ -392,6 +392,12 @@ ASA ACL-DROP packet cap[^3]:
 ```
 cap asp-drop type asp-drop acl-drop
 ```
+---
+FortiGate system CPU RAM stats performance status
+---
+```
+get system performance status
+```
 
 
 
