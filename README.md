@@ -398,6 +398,18 @@ FortiGate system CPU RAM stats performance status
 ```
 get system performance status
 ```
+---
+Show system time
+---
+```
+exec time
+```
+---
+Show logged in Admins
+---
+```
+get sys admin slist
+```
 
 
 
