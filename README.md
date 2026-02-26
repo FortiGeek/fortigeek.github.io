@@ -300,15 +300,21 @@ ssl-login-fail
 diagnose sys link-monitor status
 ```
 ### LOGS // Link monitor status
-Log & Report -> Events -> System Events -> LOG DESCRIPTION:
+Log & Report -> System Events -> General System Events -> LOG DESCRIPTION:
 ```
 Link monitor status
 ```
 ---
 ### LOGS // HA device election
-Log & Report -> Events -> HA Events -> MESSAGE:
+Log & Report -> System Events -> HA Events -> MESSAGE:
 ```
 Virtual cluster's member state moved
+```
+---
+### LOGS // Config changes - Detect system changes - "what changed?!"
+Log & Report -> System Events -> General System Events -> LOG DESCRIPTION:
+```
+Object attribute configured
 ```
 ---
 ## TSHOOT // Transceivers installed & status
