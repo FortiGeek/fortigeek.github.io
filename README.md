@@ -177,7 +177,6 @@ set autorun-log-fsck
 ```
 end
 ---
-----
 ## Confirm IP address' relation to GEO IP Database
 ```
 diagnose geoip ip2country 
