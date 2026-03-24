@@ -171,11 +171,11 @@ end
 ```
 ---
 ### scandisk on power up; auto File System Check disk scan thing
-config system global
+####config system global
 ```
-set autorun-log-fsck
+set autorun-log-fsck enable
 ```
-end
+####end
 ---
 ## Confirm IP address' relation to GEO IP Database
 ```
