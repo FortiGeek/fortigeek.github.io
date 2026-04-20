@@ -205,6 +205,11 @@ diag sniff pack any 'ether proto 0x88cc' 4 | grep -i in
 ```
 ## TSHOOT:
 
+### DIAG // MTU
+check mtu on interface:
+```diagnose netlink interface list <port29>
+```
+---
 ### DIAG // IPsec VPN tunnel status
 Show tunnel summary:
 ```
