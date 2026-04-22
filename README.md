@@ -218,6 +218,14 @@ get vpn ipsec tunnel summary
 ```
 if output is  selectors(total,up): 1/0 then your tunnel is down
 ---
+### DIAG / VPN Debug IKE for Proposals
+```
+diagnose vpn ike log filter rem-addr4 <ip>
+diagnose debug application ike -1
+diagnose debug console timestamp enable
+diagnose debug enable
+```
+---
 ### DIAG // IPsec VPN phase1 up or down
 check tunnel for phase1 status:
 ```
