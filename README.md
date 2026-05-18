@@ -220,7 +220,7 @@ if output is  selectors(total,up): 1/0 then your tunnel is down
 ---
 ### DIAG / VPN Debug IKE for Proposals
 ```
-diagnose vpn ike log filter rem-addr4 <ip>
+diagnose vpn ike log filter dst-addr4 
 diagnose debug application ike -1
 diagnose debug console timestamp enable
 diagnose debug enable
