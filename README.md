@@ -147,6 +147,18 @@ if sip entry is still 13 perform the following (if not, change the entry # after
 delete 13
 end
 ```
+## session-helper per vdom:
+enable VoIP Feature Visibility; apply the new "default" VOIP profile to the SIP policy.
+the important part of the new profile is the set rtp enable
+```
+config sip
+    set status enable
+    set rtp enable
+    set nat-port-range 5117-65533
+    set open-register-pinhole enable
+    set open-contact-pinhole enable
+    set strict-register enable
+```
 ---
 ## LLDP:
 ### Enable LLDP reception/transmission globally (config global):
