@@ -327,6 +327,10 @@ FAILURE: Log & Report -> Events -> VPN Events -> ACTION:
 ```
 ssl-login-fail
 ```
+Token Activation Email: Log & Report > General System Events > “Log Description”:
+```
+Token activation code sent
+```
 ---
 ### DIAG // Link monitor status
 ```
